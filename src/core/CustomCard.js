@@ -29,7 +29,7 @@ export default function CustomCard({ item, addToProduct }) {
             src={require("../images/cart.png")}
             alt={item.title}
             loading="lazy"
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", height: "1.4rem", width: "1.4rem" }}
             onClick={handleClick}
           />
         </Grid>

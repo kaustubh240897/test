@@ -4,7 +4,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { connect } from "react-redux";
 import { checkout } from "../redux/actions";
 import PropTypes from "prop-types";
-import { tableBodyClasses, Typography } from "@mui/material";
 import "../styles/index.css";
 
 const deliveryCost = 50;
@@ -21,7 +20,7 @@ const Checkout = (props) => {
   return (
     <ThemeProvider theme={theme}>
       <MainContainer>
-        <h4>Checkout {totalPrice}</h4>
+        <h4>Checkout</h4>
         {props.cartData.map((i) => {
           return (
             <>
@@ -47,7 +46,7 @@ const Checkout = (props) => {
           <p>**** **** **** **** 3212</p>
           <div className="card-name">
             <p>Card Holder</p>
-            <p>Expree</p>
+            <p>Expire</p>
           </div>
           <div className="card-name">
             <p>Kaushtubh Dwivedi</p>

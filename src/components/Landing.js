@@ -20,13 +20,13 @@ const Landing = (props) => {
         <Grid container justifyContent="center" alignItems="center">
           <Grid item>
             <Typography component="h1" variant="h3">
-              Products
+              Featured
             </Typography>
           </Grid>
         </Grid>
         <Grid container spacing={4}>
           {props.products.map((item) => (
-            <Grid item xs={12} sm={6} lg={3} key={item?._id?.$oid}>
+            <Grid item xs={12} sm={6} lg={2} key={item?._id?.$oid}>
               <CustomCard item={item} addToProduct={props.addProduct} />
             </Grid>
           ))}
